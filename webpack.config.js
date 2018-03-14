@@ -12,5 +12,9 @@ module.exports = {
             test: /\.js/,
             exclude: /node_modules/
         }]
+    },
+    devtool: 'cheap-module-source-map',
+    devServer: {
+        contentBase: path.join(__dirname, 'public')
     }
 };
