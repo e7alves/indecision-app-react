@@ -8,11 +8,12 @@ const Modal = (props) => (
         isOpen={!!props.selectedOption}
         contentLabel="selected option"
         onRequestClose={props.handleClearSelectedOption}
+        className="modal"
     >
-        <h3>What should I do?</h3>
-        {props.selectedOption && <p>{props.selectedOption}</p>}
-        <button onClick={props.handleClearSelectedOption}>
-            OK
+        <h3 className="modal__title">What should I do?</h3>
+        {props.selectedOption && <p className="modal__body">{props.selectedOption}</p>}
+        <button className="button" onClick={props.handleClearSelectedOption}>
+            Okay
         </button>
     </ReactModal>
 );
