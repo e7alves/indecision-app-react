@@ -26,7 +26,7 @@ class AddOption extends React.Component {
                 </form>
             </div>
         );
-    };
+    }
 }
 
 export default AddOption;
